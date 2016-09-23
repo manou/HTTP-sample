@@ -9,6 +9,7 @@ import (
 const addr = "localhost:12345"
 
 func main() {
+	fmt.println("hello github")
 	mux := http.NewServeMux()
 	handler := &myserver.MyHandler{}
 	mux.Handle("/favicon.ico", http.NotFoundHandler())
